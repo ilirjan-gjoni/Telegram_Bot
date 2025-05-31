@@ -18,7 +18,7 @@ async function handleRequest(request) {
         const user = update.message.from;
         const username = user.username ? `@${user.username}` : 'User';
       
-        const text = `Hello ${username}!`;
+        const text = `Hello ${username}! I'm a Telegram bot.`;
 
         // Send a reply to the user
         await fetch(TELEGRAM_API, {
